@@ -1,0 +1,7 @@
+<h1>Services registered</h1>
+
+<ul>
+<% @registry.each do |key,value| %>
+  <li><%= key %> -> <%= value.class.name %> </li>
+<% end %>
+</ul>
